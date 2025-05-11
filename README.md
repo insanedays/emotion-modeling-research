@@ -4,7 +4,8 @@ Este repositório contém o desenvolvimento de um projeto de pesquisa individual
 
 ##  Objetivo Geral
 
-Investigar a viabilidade técnica de construir modelos supervisionados individualizados para identificação de estados emocionais, utilizando sinais EEG e anotações subjetivas.
+Desenvolver uma abordagem personalizada para reconhecimento de estados emocionais a partir de sinais EEG combinados com auto anotações subjetivas. O foco de curto prazo é montar e validar tecnicamente um pipeline supervisionado, capaz de processar esse tipo de dado de forma individualizada. Nesta primeira etapa, serão utilizados dados públicos e, se viável, uma coleta própria com EEG de uso pessoal, com o objetivo de testar o funcionamento do pipeline de ponta a ponta.
+A partir dessa fundação, o projeto será aprofundado no mestrado com o objetivo de construir um modelo adaptativo capaz de aprender ao longo do tempo  os padrões emocionais específicos de cada indivíduo, lidando com novos dados e feedbacks contínuos. Em longo prazo, a intenção é aplicar esse conhecimento na criação de sistemas inteligentes voltados à saúde mental, com foco em suporte emocional personalizado e prevenção de crises.
 
 ## Estrutura do Repositório
 
@@ -28,7 +29,9 @@ emotion-modeling-research/
 
 ## 📍 Fase Atual: Pipeline Validation
 
-Nesta fase, o foco está em montar e validar tecnicamente um pipeline completo, com base em dados públicos como DEAP, SEED e DREAMER. As etapas envolvem:
+
+Nesta fase, o foco está em montar e validar tecnicamente um pipeline completo.
+- Buscar dados públicos
 - Análise da qualidade dos dados
 - Pré-processamento de sinais EEG (remoção de ruído, bandas, entropia)
 - Integração com rótulos emocionais subjetivos
@@ -36,6 +39,8 @@ Nesta fase, o foco está em montar e validar tecnicamente um pipeline completo, 
 - Avaliação estatística (treino/teste) para verificação da consistência do aprendizado
 
 Caso viável, será realizada uma coleta pessoal com EEG de uso não invasivo para testar o funcionamento prático da estrutura.
+
+[`01-pipeline-validation/README.md`](01-pipeline-validation/README.md)
 
 ## 🧭 Fase Futura: Adaptive Modeling
 
